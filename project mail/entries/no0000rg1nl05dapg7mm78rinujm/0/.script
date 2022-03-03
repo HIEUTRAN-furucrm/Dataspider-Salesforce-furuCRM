@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<script>
+  <memento>
+    <option type="attributes">
+      <DATA_PROCESSING_CONNECTION_OPTION_XMLFW_CONF><![CDATA[false]]></DATA_PROCESSING_CONNECTION_OPTION_XMLFW_CONF>
+    </option>
+    <extension type="attributes">
+      <created><![CDATA[1646294408475]]></created>
+      <lastUpdated><![CDATA[1646294484956]]></lastUpdated>
+      <testArgumentValues children="property" type="attributes"/>
+      <migrationFlows type="attributes"/>
+    </extension>
+  </memento>
+  <children type="components">
+    <memento id="v20000rg1nl05dapg7qm78sgnujm" type="ScriptOriginComponent">
+      <extension type="attributes">
+        <index><![CDATA[0]]></index>
+        <locationX><![CDATA[138]]></locationX>
+        <locationY><![CDATA[37]]></locationY>
+      </extension>
+      <base type="attributes"/>
+    </memento>
+    <memento id="dk0000rg1nl05dapg7qm7ab0nujm" type="ReturnComponent">
+      <extension type="attributes">
+        <index><![CDATA[1]]></index>
+        <locationX><![CDATA[384]]></locationX>
+        <locationY><![CDATA[120]]></locationY>
+      </extension>
+      <base type="attributes"/>
+    </memento>
+    <memento id="os0000rg1nl05dapg7ko90ganujm" type="DataProcessingCallComponent">
+      <base type="attributes">
+        <moduleName><![CDATA[mail_adapter]]></moduleName>
+        <operationName><![CDATA[put_smtp_with_message]]></operationName>
+        <operationProperties children="property" type="attributes">
+          <property key="PASSWORD::value"><![CDATA[7eJC3Ez7p3xV43sdyvoYRkrBI+zfGUq9nQBTLM0OMHg=]]></property>
+          <property key="POP_BEFORE_SMTP_SSL_ENABLED::type"><![CDATA[simple]]></property>
+          <property key="HEADER_TABLE::type"><![CDATA[table]]></property>
+          <property key="USER::value"><![CDATA[tthieu55@gmail.com]]></property>
+          <property key="ATTACH::columns"><![CDATA[FILE_PATH]]></property>
+          <property key="PASSWORD::type"><![CDATA[simple]]></property>
+          <property key="USER::type"><![CDATA[simple]]></property>
+          <property key="PEPLYTO_TABLE::rows"><![CDATA[0]]></property>
+          <property key="SUBJECT::type"><![CDATA[simple]]></property>
+          <property key="TO_ADDRESS::row::0::column::SEND_ADDRESS"><![CDATA[tthieu55@gmail.com]]></property>
+          <property key="BODY::type"><![CDATA[simple]]></property>
+          <property key="CONTENT_TYPE::value"><![CDATA[text/plain]]></property>
+          <property key="TO_ADDRESS::row::0::column::SEND_KIND"><![CDATA[TO]]></property>
+          <property key="TO_ADDRESS::columns"><![CDATA[SEND_KIND::SEND_ADDRESS]]></property>
+          <property key="ENCODING::type"><![CDATA[simple]]></property>
+          <property key="PEPLYTO_TABLE::type"><![CDATA[table]]></property>
+          <property key="ATTACH::row::0::column::FILE_PATH"><![CDATA[/data/csv_mnt_file/Contract.csv]]></property>
+          <property key="POP3_PORT::type"><![CDATA[simple]]></property>
+          <property key="BODY::value"><![CDATA[xin chao]]></property>
+          <property key="FROM_ADDRESS::value"><![CDATA[tthieu55@gmail.com]]></property>
+          <property key="SMTP_AUTHENTICATION_MODE::type"><![CDATA[simple]]></property>
+          <property key="ENCODING::value"><![CDATA[ISO-2022-JP]]></property>
+          <property key="SUBJECT::value"><![CDATA[mail dau tien]]></property>
+          <property key="ATTACH::rows"><![CDATA[1]]></property>
+          <property key="SERVER::type"><![CDATA[resource]]></property>
+          <property key="SMTP_AUTHENTICATION_MODE::value"><![CDATA[SMTP_AUTH_MODE_SMTP_AUTH_LOGIN]]></property>
+          <property key="POP3_SERVER::type"><![CDATA[simple]]></property>
+          <property key="SERVER::value"><![CDATA[SMTP server connection settings(1)]]></property>
+          <property key="FROM_ADDRESS::type"><![CDATA[simple]]></property>
+          <property key="TO_ADDRESS::rows"><![CDATA[1]]></property>
+          <property key="ATTACH::type"><![CDATA[table]]></property>
+          <property key="HEADER_TABLE::rows"><![CDATA[0]]></property>
+          <property key="HEADER_TABLE::columns"><![CDATA[HEADER::HEADER_VALUE]]></property>
+          <property key="POP3_PORT::value"><![CDATA[110]]></property>
+          <property key="CONTENT_TYPE::type"><![CDATA[simple]]></property>
+          <property key="POP_BEFORE_SMTP_SSL_ENABLED::value"><![CDATA[false]]></property>
+          <property key="PEPLYTO_TABLE::columns"><![CDATA[REPLYTO_COLUMN]]></property>
+          <property key="TO_ADDRESS::type"><![CDATA[table]]></property>
+          <property key="POP3_SERVER::value"/>
+        </operationProperties>
+      </base>
+      <name><![CDATA[mail_send_message]]></name>
+      <extension type="attributes">
+        <locationX><![CDATA[238]]></locationX>
+        <locationY><![CDATA[72]]></locationY>
+        <index><![CDATA[2]]></index>
+      </extension>
+      <description/>
+    </memento>
+  </children>
+  <children type="relations">
+    <memento id="ac0000rg1nl05dapg7gohusknujm" type="ProcessFlow">
+      <base type="attributes">
+        <fromID><![CDATA[os0000rg1nl05dapg7ko90ganujm]]></fromID>
+        <toID><![CDATA[dk0000rg1nl05dapg7qm7ab0nujm]]></toID>
+      </base>
+    </memento>
+    <memento id="b00000rg1nl05dapg7koh1n4nujm" type="ProcessFlow">
+      <base type="attributes">
+        <fromID><![CDATA[v20000rg1nl05dapg7qm78sgnujm]]></fromID>
+        <toID><![CDATA[os0000rg1nl05dapg7ko90ganujm]]></toID>
+      </base>
+    </memento>
+  </children>
+</script>

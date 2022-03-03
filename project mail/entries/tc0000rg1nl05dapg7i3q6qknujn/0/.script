@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<script>
+  <memento>
+    <option type="attributes">
+      <DATA_PROCESSING_CONNECTION_OPTION_XMLFW_CONF><![CDATA[false]]></DATA_PROCESSING_CONNECTION_OPTION_XMLFW_CONF>
+    </option>
+    <extension type="attributes">
+      <created><![CDATA[1646295902433]]></created>
+      <lastUpdated><![CDATA[1646296134167]]></lastUpdated>
+      <testArgumentValues children="property" type="attributes"/>
+      <migrationFlows type="attributes"/>
+    </extension>
+  </memento>
+  <children type="components">
+    <memento id="r80000rg1nl05dapg7c3q73inujn" type="ReturnComponent">
+      <extension type="attributes">
+        <index><![CDATA[1]]></index>
+        <locationX><![CDATA[581]]></locationX>
+        <locationY><![CDATA[102]]></locationY>
+      </extension>
+      <base type="attributes"/>
+    </memento>
+    <memento id="l60000rg1nl05dapg7o3q6rsnujn" type="ScriptOriginComponent">
+      <extension type="attributes">
+        <index><![CDATA[0]]></index>
+        <locationX><![CDATA[130]]></locationX>
+        <locationY><![CDATA[122]]></locationY>
+      </extension>
+      <base type="attributes"/>
+    </memento>
+    <memento id="pa0000rg1nl05dapg7ea6n4inujn" type="VariableProcessingComponent">
+      <name><![CDATA[mapping]]></name>
+      <extension type="attributes">
+        <inputPSPSupported><![CDATA[true]]></inputPSPSupported>
+        <outputPSPSupported><![CDATA[true]]></outputPSPSupported>
+        <locationX><![CDATA[370]]></locationX>
+        <locationY><![CDATA[45]]></locationY>
+        <index><![CDATA[4]]></index>
+        <inPSPBlock><![CDATA[true]]></inPSPBlock>
+      </extension>
+      <base type="attributes">
+        <model><![CDATA[#
+#Thu Mar 03 17:28:54 JST 2022
+INPUT_ADAPTER_DOCUMENT=main_data
+VARIABLES_MAPPER_INFORMATION=variables()
+FAST_CONVERTER_INFORMATION=simple(value(String,column(String,0)),value(String,column(String,1)),value(String,column(String,2)))
+MAPPING_DOCUMENT_2=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<mapping type\="document" version\="2.3">\r\n  <output>\r\n    <element comment\="" expanded\="false" predicate\="" qName\="table" type\="String">\r\n      <element comment\="" expanded\="false" predicate\="" qName\="row" type\="String">\r\n        <links>\r\n          <logic class\="com.appresso.ds.mapper.model.SimpleLoopIcon" comment\="" id\="ce0000rg1nl05dapg7ma73b0nujn" type\="String" x\="16" y\="16">\r\n            <links>\r\n              <ref id\="s20000rg1nl05dapg7ca721mnujn"/>\r\n            </links>\r\n          </logic>\r\n          <null/>\r\n        </links>\r\n        <element comment\="External_ID__c" expanded\="false" predicate\="1" qName\="column" type\="String">\r\n          <links>\r\n            <null/>\r\n            <ref id\="qc0000rg1nl05dapg7sa722knujn"/>\r\n          </links>\r\n        </element>\r\n        <element comment\="Name" expanded\="false" predicate\="2" qName\="column" type\="String">\r\n          <links>\r\n            <null/>\r\n            <ref id\="lg0000rg1nl05dapg72a7234nujn"/>\r\n          </links>\r\n        </element>\r\n        <element comment\="Site" expanded\="false" predicate\="3" qName\="column" type\="String">\r\n          <links>\r\n            <null/>\r\n            <ref id\="ua0000rg1nl05dapg7ca724inujn"/>\r\n          </links>\r\n        </element>\r\n      </element>\r\n    </element>\r\n  </output>\r\n  <input schemaSynchronized\="true">\r\n    <element comment\="" expanded\="false" id\="kq0000rg1nl05dapg76a71tinujn" predicate\="" qName\="table" type\="String">\r\n      <element comment\="" expanded\="false" id\="s20000rg1nl05dapg7ca721mnujn" predicate\="" qName\="row" type\="String">\r\n        <element comment\="External_ID" expanded\="false" id\="qc0000rg1nl05dapg7sa722knujn" predicate\="1" qName\="column" type\="String"/>\r\n        <element comment\="First name" expanded\="false" id\="lg0000rg1nl05dapg72a7234nujn" predicate\="2" qName\="column" type\="String"/>\r\n        <element comment\="Last name" expanded\="false" id\="ua0000rg1nl05dapg7ca724inujn" predicate\="3" qName\="column" type\="String"/>\r\n      </element>\r\n    </element>\r\n  </input>\r\n</mapping>\r\n
+INPUT_ADAPTER=csv_read
+MAPPING_DOCUMENT=
+FAST_CONVERTER_NAME=expressionInput
+TYPE=dataMapper
+]]></model>
+      </base>
+    </memento>
+    <memento id="v00000rg1nl05dapg7a7s1eqnujn" type="DataProcessingCallComponent">
+      <base type="attributes">
+        <moduleName><![CDATA[csv_adapter]]></moduleName>
+        <operationName><![CDATA[get_data]]></operationName>
+        <operationProperties children="property" type="attributes">
+          <property key="SKIP_FIRST_LINE::value"><![CDATA[false]]></property>
+          <property key="XMLFW_LARGEDATA::type"><![CDATA[simple]]></property>
+          <property key="START_LINE_NUMBER::type"><![CDATA[simple]]></property>
+          <property key="COLUMNS::row::2::column::COLUMN_NAME"><![CDATA[Last name]]></property>
+          <property key="COLUMNS::rows"><![CDATA[3]]></property>
+          <property key="DELIMITER_CHARSET::value"/>
+          <property key="CHARSET::type"><![CDATA[simple]]></property>
+          <property key="CHARSET::value"><![CDATA[US-ASCII]]></property>
+          <property key="DELIMITER_MODE::type"><![CDATA[simple]]></property>
+          <property key="ENABLE_PARALLEL::type"><![CDATA[simple]]></property>
+          <property key="DELIMITER_DIRECT::type"><![CDATA[simple]]></property>
+          <property key="DELIMITER_CHARSET::type"><![CDATA[simple]]></property>
+          <property key="FILE_PATH::type"><![CDATA[simple]]></property>
+          <property key="DELIMITER_CHAR::type"><![CDATA[simple]]></property>
+          <property key="DELIMITER_CHAR::value"><![CDATA[,]]></property>
+          <property key="COLUMNS::row::0::column::COLUMN_NAME"><![CDATA[External_ID]]></property>
+          <property key="XMLFW_LARGEDATA::value"><![CDATA[USE_SCRIPT_DEFAULT]]></property>
+          <property key="ENABLE_PARALLEL::value"><![CDATA[false]]></property>
+          <property key="DELIMITER_DIRECT::value"/>
+          <property key="SKIP_FIRST_LINE::type"><![CDATA[simple]]></property>
+          <property key="START_LINE_NUMBER::value"><![CDATA[1]]></property>
+          <property key="DELIMITER_MODE::value"><![CDATA[DELIMITER_MODE_LIST_VALUE]]></property>
+          <property key="COLUMNS::columns"><![CDATA[COLUMN_NAME]]></property>
+          <property key="COLUMNS::row::1::column::COLUMN_NAME"><![CDATA[First name]]></property>
+          <property key="FILE_PATH::value"><![CDATA[/data/csv_mnt_file/Contract.csv]]></property>
+          <property key="COLUMNS::type"><![CDATA[table]]></property>
+        </operationProperties>
+      </base>
+      <name><![CDATA[csv_read]]></name>
+      <extension type="attributes">
+        <locationX><![CDATA[260]]></locationX>
+        <locationY><![CDATA[45]]></locationY>
+        <index><![CDATA[2]]></index>
+        <inPSPBlock><![CDATA[true]]></inPSPBlock>
+      </extension>
+      <description/>
+    </memento>
+    <memento id="lo0000rg1nl05dapg7ca58oknujn" type="DataProcessingCallComponent">
+      <base type="attributes">
+        <moduleName><![CDATA[salesforce_adapter]]></moduleName>
+        <operationName><![CDATA[put_upsert]]></operationName>
+        <operationProperties children="property" type="attributes">
+          <property key="schema::row::2::column::column_label"><![CDATA[Account Site]]></property>
+          <property key="relationship::type"><![CDATA[table]]></property>
+          <property key="upsert_result_setting::value"><![CDATA[ELEMENT_GET_UPSERT_RESULT]]></property>
+          <property key="schema::row::1::column::column_type"><![CDATA[string]]></property>
+          <property key="resource::type"><![CDATA[resource]]></property>
+          <property key="upsert_result_setting::type"><![CDATA[simple]]></property>
+          <property key="XMLFW_LARGEDATA::type"><![CDATA[simple]]></property>
+          <property key="resource::value"><![CDATA[Salesforce Connection Setting API 43.0]]></property>
+          <property key="schema::row::0::column::column_external_key"><![CDATA[false]]></property>
+          <property key="schema::row::1::column::column_label"><![CDATA[Account Name]]></property>
+          <property key="relationship::rows"><![CDATA[0]]></property>
+          <property key="table::type"><![CDATA[simple]]></property>
+          <property key="null_setting::value"><![CDATA[ELEMENT_ALWAYS_UPDATE]]></property>
+          <property key="schema::row::2::column::column_type"><![CDATA[string]]></property>
+          <property key="schema::type"><![CDATA[table]]></property>
+          <property key="schema::row::1::column::column_external_key"><![CDATA[false]]></property>
+          <property key="relationship::columns"><![CDATA[column_relationship_base_column_api_name::column_relationship_name::column_relationship_object_api_name::column_relationship_external_key_api]]></property>
+          <property key="batch_size::value"><![CDATA[200]]></property>
+          <property key="null_setting::type"><![CDATA[simple]]></property>
+          <property key="base64_field_input_form::type"><![CDATA[simple]]></property>
+          <property key="schema::rows"><![CDATA[3]]></property>
+          <property key="base64_field_input_form::value"><![CDATA[base64_data]]></property>
+          <property key="schema::row::0::column::column_api"><![CDATA[External_ID__c]]></property>
+          <property key="schema::row::0::column::column_type"><![CDATA[string]]></property>
+          <property key="XMLFW_LARGEDATA::value"><![CDATA[USE_SCRIPT_DEFAULT]]></property>
+          <property key="schema::columns"><![CDATA[column_external_key::column_label::column_api::column_type]]></property>
+          <property key="schema::row::1::column::column_api"><![CDATA[Name]]></property>
+          <property key="schema::row::2::column::column_external_key"><![CDATA[false]]></property>
+          <property key="schema::row::0::column::column_label"><![CDATA[External ID]]></property>
+          <property key="element_type::type"><![CDATA[simple]]></property>
+          <property key="schema::row::2::column::column_api"><![CDATA[Site]]></property>
+          <property key="table::value"><![CDATA[Account]]></property>
+          <property key="element_type::value"><![CDATA[ELEMENT_TYPE_API]]></property>
+          <property key="batch_size::type"><![CDATA[simple]]></property>
+        </operationProperties>
+      </base>
+      <name><![CDATA[put_upsert]]></name>
+      <extension type="attributes">
+        <locationX><![CDATA[491]]></locationX>
+        <locationY><![CDATA[46]]></locationY>
+        <index><![CDATA[3]]></index>
+      </extension>
+      <description/>
+    </memento>
+  </children>
+  <children type="relations">
+    <memento id="ag0000rg1nl05dapg7aa72vgnujn" type="DataFlow">
+      <base type="attributes">
+        <fromName><![CDATA[main_data]]></fromName>
+        <toName><![CDATA[main_data]]></toName>
+        <fromID><![CDATA[pa0000rg1nl05dapg7ea6n4inujn]]></fromID>
+        <toID><![CDATA[lo0000rg1nl05dapg7ca58oknujn]]></toID>
+      </base>
+      <extension type="attributes">
+        <index><![CDATA[0]]></index>
+      </extension>
+    </memento>
+    <memento id="u40000rg1nl05dapg7ma73c0nujn" type="ProcessFlow">
+      <base type="attributes">
+        <fromID><![CDATA[v00000rg1nl05dapg7a7s1eqnujn]]></fromID>
+        <toID><![CDATA[pa0000rg1nl05dapg7ea6n4inujn]]></toID>
+      </base>
+    </memento>
+    <memento id="mi0000rg1nl05dapg7qa73eqnujn" type="ProcessFlow">
+      <base type="attributes">
+        <fromID><![CDATA[pa0000rg1nl05dapg7ea6n4inujn]]></fromID>
+        <toID><![CDATA[lo0000rg1nl05dapg7ca58oknujn]]></toID>
+      </base>
+    </memento>
+    <memento id="hs0000rg1nl05dapg76a71d2nujn" type="DataFlow">
+      <base type="attributes">
+        <fromName><![CDATA[main_data]]></fromName>
+        <toName><![CDATA[main_data]]></toName>
+        <inPSPBlock><![CDATA[true]]></inPSPBlock>
+        <fromID><![CDATA[v00000rg1nl05dapg7a7s1eqnujn]]></fromID>
+        <toID><![CDATA[pa0000rg1nl05dapg7ea6n4inujn]]></toID>
+      </base>
+      <extension type="attributes">
+        <index><![CDATA[0]]></index>
+      </extension>
+    </memento>
+  </children>
+</script>

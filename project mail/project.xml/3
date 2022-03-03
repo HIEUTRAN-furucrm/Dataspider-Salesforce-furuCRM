@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+  <conf type="attributes">
+    <name><![CDATA[root@project mail]]></name>
+    <description/>
+    <archive><![CDATA[project mail.jar]]></archive>
+    <testProject><![CDATA[false]]></testProject>
+    <modifier><![CDATA[root]]></modifier>
+    <modified><![CDATA[1646301663613]]></modified>
+    <version><![CDATA[3]]></version>
+    <extensions type="attributes">
+      <folders type="list"/>
+      <folderCreated type="attributes"/>
+      <folderLastUpdated type="attributes"/>
+      <id_q20000rg1nl05dapg770aem4nuji><![CDATA[0]]></id_q20000rg1nl05dapg770aem4nuji>
+      <id_no0000rg1nl05dapg7mm78rinujm><![CDATA[1]]></id_no0000rg1nl05dapg7mm78rinujm>
+      <id_tc0000rg1nl05dapg7i3q6qknujn><![CDATA[2]]></id_tc0000rg1nl05dapg7i3q6qknujn>
+      <customLogicDefinition><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?><palette type="project" version="2.3"/>]]></customLogicDefinition>
+    </extensions>
+  </conf>
+  <entries type="attributes">
+    <entry key="mq0000rg1nl05dapg7s8fuj0nujn" type="attributes">
+      <name><![CDATA[Salesforce Connection Setting API 43.0]]></name>
+      <type><![CDATA[DataProcessingResourceConfigEntry]]></type>
+      <description/>
+      <version><![CDATA[0]]></version>
+    </entry>
+    <entry key="tc0000rg1nl05dapg7i3q6qknujn" type="attributes">
+      <name><![CDATA[mail_saleforce]]></name>
+      <type><![CDATA[ScriptEntry]]></type>
+      <description/>
+      <version><![CDATA[2]]></version>
+    </entry>
+    <entry key="no0000rg1nl05dapg7mm78rinujm" type="attributes">
+      <name><![CDATA[mail_send]]></name>
+      <type><![CDATA[ScriptEntry]]></type>
+      <description/>
+      <version><![CDATA[0]]></version>
+    </entry>
+    <entry key="ji0000rg1nl05dapg7t9ubfinujl" type="attributes">
+      <name><![CDATA[SMTP server connection settings(1)]]></name>
+      <type><![CDATA[DataProcessingResourceConfigEntry]]></type>
+      <description/>
+      <version><![CDATA[0]]></version>
+    </entry>
+    <entry key="ue0000rg1nl05dapg79d81qinujj" type="attributes">
+      <name><![CDATA[POP3 server connection settings]]></name>
+      <type><![CDATA[DataProcessingResourceConfigEntry]]></type>
+      <description/>
+      <version><![CDATA[0]]></version>
+    </entry>
+    <entry key="q20000rg1nl05dapg770aem4nuji" type="attributes">
+      <name><![CDATA[mail_receive]]></name>
+      <type><![CDATA[ScriptEntry]]></type>
+      <description/>
+      <version><![CDATA[0]]></version>
+    </entry>
+  </entries>
+</project>

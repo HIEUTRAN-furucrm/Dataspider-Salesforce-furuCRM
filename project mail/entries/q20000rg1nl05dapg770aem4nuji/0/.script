@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<script>
+  <memento>
+    <option type="attributes">
+      <DATA_PROCESSING_CONNECTION_OPTION_XMLFW_CONF><![CDATA[false]]></DATA_PROCESSING_CONNECTION_OPTION_XMLFW_CONF>
+    </option>
+    <extension type="attributes">
+      <created><![CDATA[1646286350845]]></created>
+      <lastUpdated><![CDATA[1646294475918]]></lastUpdated>
+      <testArgumentValues children="property" type="attributes"/>
+      <migrationFlows type="attributes"/>
+    </extension>
+  </memento>
+  <children type="components">
+    <memento id="ls0000rg1nl05dapg75ota1anujj" type="DataProcessingCallComponent">
+      <base type="attributes">
+        <moduleName><![CDATA[mail_adapter]]></moduleName>
+        <operationName><![CDATA[get_pop3]]></operationName>
+        <operationProperties children="property" type="attributes">
+          <property key="RECEIVE_AUTHENTICATION_MODE::value"><![CDATA[SMTP_AUTH_MODE_SMTP_AUTH_LOGIN]]></property>
+          <property key="RECV_ATTACHMENT_DIRECTORY::type"><![CDATA[simple]]></property>
+          <property key="HEADER_TABLE::rows"><![CDATA[0]]></property>
+          <property key="RECV_ATTACHMENTS::type"><![CDATA[simple]]></property>
+          <property key="RECV_ATTACHMENT_DIRECTORY::value"><![CDATA[/tmp]]></property>
+          <property key="SET_MAXIMUM_COUNT::type"><![CDATA[simple]]></property>
+          <property key="RECV_PASSWORD::value"><![CDATA[Qu93liMxkMHpQNynJx4xk/PV5lP8fAgVR713xMJRLSQ=]]></property>
+          <property key="SKIP_ERROR_MESSAGE::value"><![CDATA[false]]></property>
+          <property key="XMLFW_LARGEDATA::type"><![CDATA[simple]]></property>
+          <property key="RECV_USER::value"><![CDATA[mstrex55@gmail.com]]></property>
+          <property key="RECV_ENCODE::type"><![CDATA[simple]]></property>
+          <property key="MAXIMUM_COUNT::value"><![CDATA[1000]]></property>
+          <property key="RECV_ATTACHMENTS::value"><![CDATA[true]]></property>
+          <property key="RECEIVE_ATTACH_OVERWRITE::value"><![CDATA[ATTACH_OVERWRITE]]></property>
+          <property key="EMAIL_ADDRESS_ONLY::type"><![CDATA[simple]]></property>
+          <property key="RECEIVE_AUTHENTICATION_MODE::type"><![CDATA[simple]]></property>
+          <property key="SKIP_ERROR_MESSAGE::type"><![CDATA[simple]]></property>
+          <property key="RECV_DELETE::value"><![CDATA[MAIL_DELETE_NO]]></property>
+          <property key="RECEIVE_FROM_LATEST_MESSAGE::value"><![CDATA[false]]></property>
+          <property key="RECV_USE_MESSAGE_CHARSET::type"><![CDATA[simple]]></property>
+          <property key="RECV_POP3_SERVER::type"><![CDATA[resource]]></property>
+          <property key="RECEIVE_FROM_LATEST_MESSAGE::type"><![CDATA[simple]]></property>
+          <property key="RECV_USER::type"><![CDATA[simple]]></property>
+          <property key="XMLFW_LARGEDATA::value"><![CDATA[USE_SCRIPT_DEFAULT]]></property>
+          <property key="RECV_DELETE::type"><![CDATA[simple]]></property>
+          <property key="HEADER_TABLE::type"><![CDATA[table]]></property>
+          <property key="RECV_PASSWORD::type"><![CDATA[simple]]></property>
+          <property key="RECV_USE_MESSAGE_CHARSET::value"><![CDATA[true]]></property>
+          <property key="MAXIMUM_COUNT::type"><![CDATA[simple]]></property>
+          <property key="RECV_ENCODE::value"><![CDATA[JISAutoDetect]]></property>
+          <property key="RECV_POP3_SERVER::value"><![CDATA[POP3 server connection settings]]></property>
+          <property key="RECEIVE_ATTACH_OVERWRITE::type"><![CDATA[simple]]></property>
+          <property key="HEADER_TABLE::columns"><![CDATA[HEADER]]></property>
+          <property key="EMAIL_ADDRESS_ONLY::value"><![CDATA[false]]></property>
+          <property key="SET_MAXIMUM_COUNT::value"><![CDATA[false]]></property>
+        </operationProperties>
+      </base>
+      <name><![CDATA[mail_receive_pop3]]></name>
+      <extension type="attributes">
+        <locationX><![CDATA[329]]></locationX>
+        <locationY><![CDATA[82]]></locationY>
+        <index><![CDATA[3]]></index>
+      </extension>
+      <description/>
+    </memento>
+    <memento id="h40000rg1nl05dapg790ai5qnuji" type="ReturnComponent">
+      <extension type="attributes">
+        <index><![CDATA[1]]></index>
+        <locationX><![CDATA[504]]></locationX>
+        <locationY><![CDATA[103]]></locationY>
+      </extension>
+      <base type="attributes"/>
+    </memento>
+    <memento id="p60000rg1nl05dapg7p0af02nuji" type="ScriptOriginComponent">
+      <extension type="attributes">
+        <index><![CDATA[0]]></index>
+        <locationX><![CDATA[209]]></locationX>
+        <locationY><![CDATA[70]]></locationY>
+      </extension>
+      <base type="attributes"/>
+    </memento>
+  </children>
+  <children type="relations">
+    <memento id="k80000rg1nl05dapg75n2chanujl" type="ProcessFlow">
+      <base type="attributes">
+        <fromID><![CDATA[p60000rg1nl05dapg7p0af02nuji]]></fromID>
+        <toID><![CDATA[ls0000rg1nl05dapg75ota1anujj]]></toID>
+      </base>
+    </memento>
+    <memento id="v60000rg1nl05dapg7jn3hg4nujl" type="ProcessFlow">
+      <base type="attributes">
+        <fromID><![CDATA[ls0000rg1nl05dapg75ota1anujj]]></fromID>
+        <toID><![CDATA[h40000rg1nl05dapg790ai5qnuji]]></toID>
+      </base>
+    </memento>
+  </children>
+</script>
