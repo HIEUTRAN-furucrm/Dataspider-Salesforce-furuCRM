@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+  <conf type="attributes">
+    <name><![CDATA[root@project2]]></name>
+    <description/>
+    <archive><![CDATA[project2.jar]]></archive>
+    <testProject><![CDATA[false]]></testProject>
+    <modifier><![CDATA[root]]></modifier>
+    <modified><![CDATA[1646190430435]]></modified>
+    <version><![CDATA[0]]></version>
+    <extensions type="attributes"/>
+  </conf>
+  <entries type="attributes"/>
+</project>

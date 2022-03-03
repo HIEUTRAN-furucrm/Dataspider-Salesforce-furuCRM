@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<script>
+  <memento>
+    <option type="attributes">
+      <DATA_PROCESSING_CONNECTION_OPTION_XMLFW_CONF><![CDATA[false]]></DATA_PROCESSING_CONNECTION_OPTION_XMLFW_CONF>
+    </option>
+    <extension type="attributes">
+      <created><![CDATA[1646198599602]]></created>
+      <lastUpdated><![CDATA[1646198599602]]></lastUpdated>
+      <testArgumentValues children="property" type="attributes"/>
+      <migrationFlows type="attributes"/>
+    </extension>
+  </memento>
+  <children type="components">
+    <memento id="u00000hg7kl05e6pkb1abtj6nui8" type="ScriptOriginComponent">
+      <extension type="attributes">
+        <index><![CDATA[0]]></index>
+        <locationX><![CDATA[16]]></locationX>
+        <locationY><![CDATA[16]]></locationY>
+      </extension>
+      <base type="attributes"/>
+    </memento>
+    <memento id="si0000hg7kl05e6pkbrabtmgnui8" type="ReturnComponent">
+      <extension type="attributes">
+        <index><![CDATA[1]]></index>
+        <locationX><![CDATA[400]]></locationX>
+        <locationY><![CDATA[275]]></locationY>
+      </extension>
+      <base type="attributes"/>
+    </memento>
+  </children>
+</script>

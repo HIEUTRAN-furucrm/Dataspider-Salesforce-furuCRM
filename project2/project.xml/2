@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+  <conf type="attributes">
+    <name><![CDATA[root@project2]]></name>
+    <description/>
+    <archive><![CDATA[project2.jar]]></archive>
+    <testProject><![CDATA[false]]></testProject>
+    <modifier><![CDATA[root]]></modifier>
+    <modified><![CDATA[1646198535983]]></modified>
+    <version><![CDATA[2]]></version>
+    <extensions type="attributes">
+      <folders type="list"/>
+      <folderCreated type="attributes"/>
+      <folderLastUpdated type="attributes"/>
+      <id_vi0000bg3bl05dipjuhh2fhmnui4><![CDATA[0]]></id_vi0000bg3bl05dipjuhh2fhmnui4>
+      <customLogicDefinition><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?><palette type="project" version="2.3"/>]]></customLogicDefinition>
+    </extensions>
+  </conf>
+  <entries type="attributes">
+    <entry key="vi0000bg3bl05dipjuhh2fhmnui4" type="attributes">
+      <name><![CDATA[Script]]></name>
+      <type><![CDATA[ScriptEntry]]></type>
+      <description/>
+      <version><![CDATA[1]]></version>
+    </entry>
+    <entry key="og0000bg3bl05dipjukngo7gnui5" type="attributes">
+      <name><![CDATA[PostgreSQL 12 connection settings]]></name>
+      <type><![CDATA[DataProcessingResourceConfigEntry]]></type>
+      <description/>
+      <version><![CDATA[0]]></version>
+    </entry>
+    <entry key="lk0000bg3bl05dipjur86qnqnui5" type="attributes">
+      <name><![CDATA[Salesforce Connection Setting API 43.0]]></name>
+      <type><![CDATA[DataProcessingResourceConfigEntry]]></type>
+      <description/>
+      <version><![CDATA[0]]></version>
+    </entry>
+  </entries>
+</project>
